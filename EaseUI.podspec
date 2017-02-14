@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   spec.summary      = 'EaseMob UI Kit'
   spec.homepage     = 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods'
   spec.author       = {'EaseMob Inc.' => 'admin@easemob.com'}
-  spec.source       =  {:git => 'https://github.com/easemob/easeui-ios-hyphenate-cocoapods.git', :tag => spec.version.to_s }
+  spec.source       =  {:git => 'https://github.com/echo2046/easeui-ios-hyphenate-cocoapods.git', :tag => spec.version.to_s }
   spec.source_files = 'EaseUI/**/*.{h,m,mm}'
   spec.platform     = :ios, '7.0'
   spec.vendored_libraries = ['EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrnb/libopencore-amrnb.a','EaseUI/EMUIKit/3rdparty/DeviceHelper/VoiceConvert/opencore-amrwb/libopencore-amrwb.a']
@@ -14,5 +14,5 @@ Pod::Spec.new do |spec|
   spec.resource     = 'EaseUI/resources/EaseUIResource.bundle'
   spec.xcconfig     = {'OTHER_LDFLAGS' => '-ObjC'}
   spec.dependency 'MWPhotoBrowser', '~> 2.1.1'		
-  spec.dependency 'MJRefresh'
+  spec.dependency 'MJRefresh', '~> 3.1.0'
 end
